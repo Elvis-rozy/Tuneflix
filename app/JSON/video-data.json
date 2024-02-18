@@ -1,0 +1,200 @@
+[
+  {
+    "video_name": "Demon Slayer",
+    "video_image": "images/video/demon.jpg",
+    "video_year": "2023",
+    "video_group": "HD",
+    "video_duration": "22min",
+    "video_id": 1,
+    "video_rating": "8.5",
+    "video_info": "Demon hunters anime",
+    "video_src": "https://www.youtube.com/embed/GCJnG6DYEeg?si=QMWKMLqUQAItY0BI"
+  },
+  {
+    "video_name": "One Punch man",
+    "video_image": "images/video/one-punch.jpg",
+    "video_year": "2023",
+    "video_group": "HD",
+    "video_duration": "26min",
+    "video_id": 2,
+    "video_rating": "7.2",
+    "video_info": "I challenged our teacher in combat",
+    "video_src": "https://www.youtube.com/embed/FIXm4R5_BJ0?si=uDf1VzKjZMtmjStJ"
+  },
+  {
+    "video_name": "Legendary Anime Hand Combats",
+    "video_image": "images/video/genos.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "29min",
+    "video_id": 3,
+    "video_rating": "7.9",
+    "video_info": "Anime Hand Combats",
+    "video_src": "https://www.youtube.com/embed/c4FLtqbYU8s?si=4z0xCbUtWlyUePc8"
+  },
+  {
+    "video_name": "Legendary Anime Battles",
+    "video_image": "images/video/battles.jpg",
+    "video_year": "2023",
+    "video_group": "HD",
+    "video_duration": "10min",
+    "video_id": 4,
+    "video_rating": "9.2",
+    "video_info": "You can't escape your past",
+    "video_src": "https://www.youtube.com/embed/O_saBlPL4d8?si=dUCArk7TIG26_9Do"
+  },
+  {
+    "video_name": "Anime rage moments",
+    "video_image": "images/video/rage.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "16min",
+    "video_id": 5,
+    "video_rating": "9.7",
+    "video_info": "Honor vs power",
+    "video_src": "https://www.youtube.com/embed/zsWUp6zp-no?si=AhImtm0ESU-Kn59g"
+  },
+  {
+    "video_name": "Best action anime",
+    "video_image": "images/video/action.jpg",
+    "video_year": "2023",
+    "video_group": "HD",
+    "video_duration": "21min",
+    "video_id": 6,
+    "video_rating": "8.5",
+    "video_info": "Awesome action animes",
+    "video_src": "https://www.youtube.com/embed/G6Cnoyyhu3o?si=aJ4CB2pF_sJIq_8C"
+  },
+  {
+    "video_name": "Overpowered anime characters",
+    "video_image": "images/video/over.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "13min",
+    "video_id": 7,
+    "video_rating": "7.7",
+    "video_info": "Overpowered anime characters snap",
+    "video_src": "https://www.youtube.com/embed/8R9wntOoFOE?si=tlvJ6q8eqndfs3rb"
+  },
+  {
+    "video_name": "Baki vs Yujiro",
+    "video_image": "images/video/baki.jpg",
+    "video_year": "2023",
+    "video_group": "HD",
+    "video_duration": "17min",
+    "video_id": 8,
+    "video_rating": "8.6",
+    "video_info": "Most epic battle",
+    "video_src": "https://www.youtube.com/embed/48POqJsCC2M?si=lXsDyPFepY4kpsOj"
+  },
+  {
+    "video_name": "Stunning Anime fights",
+    "video_image": "images/video/stunning.jpg",
+    "video_year": "2023",
+    "video_group": "HD",
+    "video_duration": "31min",
+    "video_id": 9,
+    "video_rating": "8.5",
+    "video_info": "Stunning Anime fights",
+    "video_src": "https://www.youtube.com/embed/n5GO0ZiE7rU?si=Jg_kU4husriTLBRt"
+  },
+  {
+    "video_name": "Over powered mc anime",
+    "video_image": "images/video/overp.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "17min",
+    "video_id": 10,
+    "video_rating": "7.9",
+    "video_info": "powerful anime mcs",
+    "video_src": "https://www.youtube.com/embed/m64t7eaKHLw?si=bQUa6VpbrvFPUdUI"
+    },
+  {
+    "video_name": "Over powered mc anime characters",
+    "video_image": "images/video/overpp.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "27min",
+    "video_id": 11,
+    "video_rating": "7.9",
+    "video_info": "random",
+    "video_src": "https://www.youtube.com/embed/7ec2Puf1tcY?si=6h2fZ7lS9SAFK9FZ"
+    },
+  {
+    "video_name": "Demon Slayer mugen",
+    "video_image": "images/video/dm.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "15min",
+    "video_id": 12,
+    "video_rating": "7.9",
+    "video_info": "heroes and protectors vol 4",
+    "video_src": "https://www.youtube.com/embed/GCJnG6DYEeg?si=QMWKMLqUQAItY0BI"
+    },
+  {
+    "video_name": "Anime battle",
+    "video_image": "images/video/an.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "27min",
+    "video_id": 13,
+    "video_rating": "7.9",
+    "video_info": "heroes and protectors vol 4",
+    "video_src": "https://www.youtube.com/embed/O_saBlPL4d8?si=dUCArk7TIG26_9Do"
+    },
+  {
+    "video_name": "Footbal moments",
+    "video_image": "images/video/foot.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "29min",
+    "video_id": 14,
+    "video_rating": "7.9",
+    "video_info": "heroes and protectors vol 4",
+    "video_src": "https://www.youtube.com/embed/HsSJT-lGa9s?si=aPmK-6t8oDOiTfyd"
+    },
+  {
+    "video_name": "Karma in football",
+    "video_image": "images/video/karm.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "17min",
+    "video_id": 15,
+    "video_rating": "7.9",
+    "video_info": "heroes and protectors vol 4",
+    "video_src": "https://www.youtube.com/embed/eHv8H_PR4xQ?si=M5BUA3zorpZyO5O2"
+    },
+  {
+    "video_name": "Real madrid vs manchester city",
+    "video_image": "images/video/madcity.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "37min",
+    "video_id": 16,
+    "video_rating": "7.9",
+    "video_info": "heroes and protectors vol 4",
+    "video_src": "https://www.youtube.com/embed/U8YOR4_IeTI?si=DHn_zIR8zn0N9vqJ"
+    },
+  {
+    "video_name": "Master Figma variants",
+    "video_image": "images/video/figma.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "14min",
+    "video_id": 17,
+    "video_rating": "7.9",
+    "video_info": "heroes and protectors vol 4",
+    "video_src": "https://www.youtube.com/embed/sU-xp2V7-_A?si=76pQa0my0L2Vxc6W"
+    },
+  {
+    "video_name": "Figma auto layouts",
+    "video_image": "images/video/layouts.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "13min",
+    "video_id": 18,
+    "video_rating": "7.9",
+    "video_info": "heroes and protectors vol 4",
+    "video_src": "https://www.youtube.com/embed/HwiHqfax7Uk?si=L0Mf5m6GjOJPOrVs"
+    }
+]
