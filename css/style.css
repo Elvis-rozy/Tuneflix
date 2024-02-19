@@ -585,9 +585,8 @@ main .side-bar .songs li .playico:hover {
   transform: scale(0.85);
 }
 main .video-links {
-  justify-content: space-between;
   flex-direction: column;
-  height: 15vh;
+  gap: 20px;
   align-items: start;
   margin-left: 20px;
   width: 25vh;

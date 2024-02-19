@@ -1,3 +1,529 @@
+const audioData = [
+  {
+    song_name: "Faded",
+    artist_name: "Alan Walker",
+    song_id: 0,
+    artist_id: 1,
+    song_image: "images/covers/alan-walker.jpg",
+    active_image: "images/background/alan-walker.jpg",
+    artist_image: "images/artists/omah_lay.jpg",
+    song_group: "recommendations",
+    song_info: "Alan Walker - Faded",
+    audio_src: ""
+  },
+  {
+    song_name: "Promises",
+    artist_name: "Calvin Harris ft Sam Smith",
+    song_id: 1,
+    artist_id: 2,
+    song_image: "images/covers/calvin-smith.jpg",
+    artist_image: "images/artists/smith1.jpg",
+    song_group: "recommendations",
+    song_info: "Calvin Harris ft Sam Smith - Promises",
+    audio_src: ""
+  },
+  {
+    song_name: "Bad Habits",
+    artist_name: "Ed Sheeran",
+    song_id: 2,
+    artist_id: 3,
+    song_image: "images/covers/sheeran.jpg",
+    artist_image: "images/artists/beyonce1.jpg",
+    song_group: "recommendations",
+    song_info: "Ed Sheeran - Bad Habits",
+    audio_src: ""
+  },
+  {
+    song_name: "Reason",
+    artist_name: "Omah Lay",
+    song_id: 3,
+    artist_id: 4,
+    song_image: "images/covers/omah_lay.jpg",
+    artist_image: "images/artists/beiber1.jpg",
+    song_group: "recommendations",
+    song_info: "Omah Lay - Reason",
+    audio_src: ""
+  },
+  {
+    song_name: "Shivers",
+    artist_name: "Ed Sheeran",
+    song_id: 4,
+    artist_id: 5,
+    song_image: "images/covers/sheeran2.jpg",
+    artist_image: "images/artists/rema1.jpg",
+    song_group: "recommendations",
+    song_info: "Ed Sheeran - Shivers",
+    audio_src: ""
+  },
+  {
+    song_name: "Charm",
+    artist_name: "Rema",
+    song_id: 5,
+    artist_id: 6,
+    song_image: "images/covers/rema.jpg",
+    artist_image: "images/artists/sheeran1.jpg",
+    song_group: "recommendations",
+    song_info: "Rema - Charm",
+    audio_src: ""
+  },
+  {
+    song_name: "Man I Am",
+    artist_name: "Sam Smith",
+    song_id: 6,
+    artist_id: 7,
+    song_image: "images/covers/smith.jpg",
+    artist_image: "images/artists/victony1.jpg",
+    song_group: "recommendations",
+    song_info: "Sam Smith - Man I Am",
+    audio_src: ""
+  },
+  {
+    song_name: "Soweto",
+    artist_name: "Victony",
+    song_id: 7,
+    artist_id: 8,
+    song_image: "images/covers/victony.jpg",
+    artist_image: "images/artists/stormzy1.jpg",
+    song_group: "recommendations",
+    song_info: "Victony Soweto remix",
+    audio_src: ""
+  },
+  {
+    song_name: "Mara",
+    artist_name: "Rema",
+    song_id: 8,
+    artist_id: 9,
+    song_image: "images/covers/rema2.jpg",
+    artist_image: "images/artists/burna1.jpg",
+    song_group: "recommendations",
+    song_info: "Rema - Mara",
+    audio_src: ""
+  },
+  {
+    song_name: "Own It",
+    artist_name: "Stormzy ft Ed Sheeran and Burna Boy",
+    song_id: 9,
+    artist_id: 10,
+    song_image: "images/covers/stormzy.jpg",
+    artist_image: "images/artists/rihanna1.jpg",
+    song_group: "recommendations",
+    song_info: "Stormzy ft Ed Sheeran and Burna Boy Own It",
+    audio_src: ""
+  },
+  {
+    song_name: "Dangerously",
+    artist_name: "Ed Sheeran",
+    song_id: 10,
+    artist_id: 11,
+    song_image: "images/covers/sheeran3.jpg",
+    artist_image: "images/artists/selena1.jpg",
+    song_group: "recommendations",
+    song_info: "Ed Sheeran - Dangerously",
+    audio_src: ""
+  }
+];
+
+const latestUploadsData = [
+  {
+    video_name: "Antman",
+    video_image: "images/video/antman.jpg",
+    video_year: "2023",
+    video_group: "HD",
+    video_duration: "22min",
+    video_id: 1,
+    video_rating: "8.5",
+    video_info: "Demon hunters anime",
+    video_src: ""
+  },
+  {
+    "video_name": "One Punch man",
+    "video_image": "images/video/one-punch.jpg",
+    "video_year": "2023",
+    "video_group": "HD",
+    "video_duration": "26min",
+    "video_id": 2,
+    "video_rating": "7.2",
+    "video_info": "I challenged our teacher in combat",
+    "video_src": "https://www.youtube.com/embed/FIXm4R5_BJ0?si=uDf1VzKjZMtmjStJ"
+  },
+  {
+    "video_name": "Legendary Anime Hand Combats",
+    "video_image": "images/video/genos.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "29min",
+    "video_id": 3,
+    "video_rating": "7.9",
+    "video_info": "Anime Hand Combats",
+    "video_src": "https://www.youtube.com/embed/c4FLtqbYU8s?si=4z0xCbUtWlyUePc8"
+  },
+  {
+    "video_name": "Legendary Anime Battles",
+    "video_image": "images/video/battles.jpg",
+    "video_year": "2023",
+    "video_group": "HD",
+    "video_duration": "10min",
+    "video_id": 4,
+    "video_rating": "9.2",
+    "video_info": "You can't escape your past",
+    "video_src": "https://www.youtube.com/embed/O_saBlPL4d8?si=dUCArk7TIG26_9Do"
+  },
+  {
+    "video_name": "Anime rage moments",
+    "video_image": "images/video/rage.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "16min",
+    "video_id": 5,
+    "video_rating": "9.7",
+    "video_info": "Honor vs power",
+    "video_src": "https://www.youtube.com/embed/zsWUp6zp-no?si=AhImtm0ESU-Kn59g"
+  },
+  {
+    "video_name": "Best action anime",
+    "video_image": "images/video/action.jpg",
+    "video_year": "2023",
+    "video_group": "HD",
+    "video_duration": "21min",
+    "video_id": 6,
+    "video_rating": "8.5",
+    "video_info": "Awesome action animes",
+    "video_src": "https://www.youtube.com/embed/G6Cnoyyhu3o?si=aJ4CB2pF_sJIq_8C"
+  },
+  {
+    "video_name": "Overpowered anime characters",
+    "video_image": "images/video/over.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "13min",
+    "video_id": 7,
+    "video_rating": "7.7",
+    "video_info": "Overpowered anime characters snap",
+    "video_src": "https://www.youtube.com/embed/8R9wntOoFOE?si=tlvJ6q8eqndfs3rb"
+  },
+  {
+    "video_name": "Baki vs Yujiro",
+    "video_image": "images/video/baki.jpg",
+    "video_year": "2023",
+    "video_group": "HD",
+    "video_duration": "17min",
+    "video_id": 8,
+    "video_rating": "8.6",
+    "video_info": "Most epic battle",
+    "video_src": "https://www.youtube.com/embed/48POqJsCC2M?si=lXsDyPFepY4kpsOj"
+  },
+  {
+    "video_name": "Stunning Anime fights",
+    "video_image": "images/video/stunning.jpg",
+    "video_year": "2023",
+    "video_group": "HD",
+    "video_duration": "31min",
+    "video_id": 9,
+    "video_rating": "8.5",
+    "video_info": "Stunning Anime fights",
+    "video_src": "https://www.youtube.com/embed/n5GO0ZiE7rU?si=Jg_kU4husriTLBRt"
+  },
+  {
+    "video_name": "Over powered mc anime",
+    "video_image": "images/video/overp.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "17min",
+    "video_id": 10,
+    "video_rating": "7.9",
+    "video_info": "powerful anime mcs",
+    "video_src": "https://www.youtube.com/embed/m64t7eaKHLw?si=bQUa6VpbrvFPUdUI"
+    },
+  {
+    "video_name": "Over powered mc anime characters",
+    "video_image": "images/video/overpp.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "27min",
+    "video_id": 11,
+    "video_rating": "7.9",
+    "video_info": "random",
+    "video_src": "https://www.youtube.com/embed/7ec2Puf1tcY?si=6h2fZ7lS9SAFK9FZ"
+    },
+  {
+    "video_name": "Demon Slayer mugen",
+    "video_image": "images/video/dm.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "15min",
+    "video_id": 12,
+    "video_rating": "7.9",
+    "video_info": "heroes and protectors vol 4",
+    "video_src": "https://www.youtube.com/embed/GCJnG6DYEeg?si=QMWKMLqUQAItY0BI"
+    },
+  {
+    "video_name": "Anime battle",
+    "video_image": "images/video/an.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "27min",
+    "video_id": 13,
+    "video_rating": "7.9",
+    "video_info": "heroes and protectors vol 4",
+    "video_src": "https://www.youtube.com/embed/O_saBlPL4d8?si=dUCArk7TIG26_9Do"
+    },
+  {
+    "video_name": "Footbal moments",
+    "video_image": "images/video/foot.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "29min",
+    "video_id": 14,
+    "video_rating": "7.9",
+    "video_info": "heroes and protectors vol 4",
+    "video_src": "https://www.youtube.com/embed/HsSJT-lGa9s?si=aPmK-6t8oDOiTfyd"
+    },
+  {
+    "video_name": "Karma in football",
+    "video_image": "images/video/karm.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "17min",
+    "video_id": 15,
+    "video_rating": "7.9",
+    "video_info": "heroes and protectors vol 4",
+    "video_src": "https://www.youtube.com/embed/eHv8H_PR4xQ?si=M5BUA3zorpZyO5O2"
+    },
+  {
+    "video_name": "Real madrid vs manchester city",
+    "video_image": "images/video/madcity.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "37min",
+    "video_id": 16,
+    "video_rating": "7.9",
+    "video_info": "heroes and protectors vol 4",
+    "video_src": "https://www.youtube.com/embed/U8YOR4_IeTI?si=DHn_zIR8zn0N9vqJ"
+    },
+  {
+    "video_name": "Master Figma variants",
+    "video_image": "images/video/figma.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "14min",
+    "video_id": 17,
+    "video_rating": "7.9",
+    "video_info": "heroes and protectors vol 4",
+    "video_src": "https://www.youtube.com/embed/sU-xp2V7-_A?si=76pQa0my0L2Vxc6W"
+    },
+  {
+    "video_name": "Figma auto layouts",
+    "video_image": "images/video/layouts.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "13min",
+    "video_id": 18,
+    "video_rating": "7.9",
+    "video_info": "heroes and protectors vol 4",
+    "video_src": "https://www.youtube.com/embed/HwiHqfax7Uk?si=L0Mf5m6GjOJPOrVs"
+    }
+];
+const mostWatchedVideoData = [
+  {
+    video_name: "Antman",
+    video_image: "images/video/antman.jpg",
+    video_year: "2023",
+    video_group: "HD",
+    video_duration: "22min",
+    video_id: 1,
+    video_rating: "8.5",
+    video_info: "Demon hunters anime",
+    video_src: "https://www.youtube.com/embed/GCJnG6DYEeg?si=QMWKMLqUQAItY0BI"
+  },
+  {
+    "video_name": "One Punch man",
+    "video_image": "images/video/one-punch.jpg",
+    "video_year": "2023",
+    "video_group": "HD",
+    "video_duration": "26min",
+    "video_id": 2,
+    "video_rating": "7.2",
+    "video_info": "I challenged our teacher in combat",
+    "video_src": "https://www.youtube.com/embed/FIXm4R5_BJ0?si=uDf1VzKjZMtmjStJ"
+  },
+  {
+    "video_name": "Legendary Anime Hand Combats",
+    "video_image": "images/video/genos.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "29min",
+    "video_id": 3,
+    "video_rating": "7.9",
+    "video_info": "Anime Hand Combats",
+    "video_src": "https://www.youtube.com/embed/c4FLtqbYU8s?si=4z0xCbUtWlyUePc8"
+  },
+  {
+    "video_name": "Legendary Anime Battles",
+    "video_image": "images/video/battles.jpg",
+    "video_year": "2023",
+    "video_group": "HD",
+    "video_duration": "10min",
+    "video_id": 4,
+    "video_rating": "9.2",
+    "video_info": "You can't escape your past",
+    "video_src": "https://www.youtube.com/embed/O_saBlPL4d8?si=dUCArk7TIG26_9Do"
+  },
+  {
+    "video_name": "Anime rage moments",
+    "video_image": "images/video/rage.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "16min",
+    "video_id": 5,
+    "video_rating": "9.7",
+    "video_info": "Honor vs power",
+    "video_src": "https://www.youtube.com/embed/zsWUp6zp-no?si=AhImtm0ESU-Kn59g"
+  },
+  {
+    "video_name": "Best action anime",
+    "video_image": "images/video/action.jpg",
+    "video_year": "2023",
+    "video_group": "HD",
+    "video_duration": "21min",
+    "video_id": 6,
+    "video_rating": "8.5",
+    "video_info": "Awesome action animes",
+    "video_src": "https://www.youtube.com/embed/G6Cnoyyhu3o?si=aJ4CB2pF_sJIq_8C"
+  },
+  {
+    "video_name": "Overpowered anime characters",
+    "video_image": "images/video/over.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "13min",
+    "video_id": 7,
+    "video_rating": "7.7",
+    "video_info": "Overpowered anime characters snap",
+    "video_src": "https://www.youtube.com/embed/8R9wntOoFOE?si=tlvJ6q8eqndfs3rb"
+  },
+  {
+    "video_name": "Baki vs Yujiro",
+    "video_image": "images/video/baki.jpg",
+    "video_year": "2023",
+    "video_group": "HD",
+    "video_duration": "17min",
+    "video_id": 8,
+    "video_rating": "8.6",
+    "video_info": "Most epic battle",
+    "video_src": "https://www.youtube.com/embed/48POqJsCC2M?si=lXsDyPFepY4kpsOj"
+  },
+  {
+    "video_name": "Stunning Anime fights",
+    "video_image": "images/video/stunning.jpg",
+    "video_year": "2023",
+    "video_group": "HD",
+    "video_duration": "31min",
+    "video_id": 9,
+    "video_rating": "8.5",
+    "video_info": "Stunning Anime fights",
+    "video_src": "https://www.youtube.com/embed/n5GO0ZiE7rU?si=Jg_kU4husriTLBRt"
+  },
+  {
+    "video_name": "Over powered mc anime",
+    "video_image": "images/video/overp.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "17min",
+    "video_id": 10,
+    "video_rating": "7.9",
+    "video_info": "powerful anime mcs",
+    "video_src": "https://www.youtube.com/embed/m64t7eaKHLw?si=bQUa6VpbrvFPUdUI"
+    },
+  {
+    "video_name": "Over powered mc anime characters",
+    "video_image": "images/video/overpp.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "27min",
+    "video_id": 11,
+    "video_rating": "7.9",
+    "video_info": "random",
+    "video_src": "https://www.youtube.com/embed/7ec2Puf1tcY?si=6h2fZ7lS9SAFK9FZ"
+    },
+  {
+    "video_name": "Demon Slayer mugen",
+    "video_image": "images/video/dm.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "15min",
+    "video_id": 12,
+    "video_rating": "7.9",
+    "video_info": "heroes and protectors vol 4",
+    "video_src": "https://www.youtube.com/embed/GCJnG6DYEeg?si=QMWKMLqUQAItY0BI"
+    },
+  {
+    "video_name": "Anime battle",
+    "video_image": "images/video/an.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "27min",
+    "video_id": 13,
+    "video_rating": "7.9",
+    "video_info": "heroes and protectors vol 4",
+    "video_src": "https://www.youtube.com/embed/O_saBlPL4d8?si=dUCArk7TIG26_9Do"
+    },
+  {
+    "video_name": "Footbal moments",
+    "video_image": "images/video/foot.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "29min",
+    "video_id": 14,
+    "video_rating": "7.9",
+    "video_info": "heroes and protectors vol 4",
+    "video_src": "https://www.youtube.com/embed/HsSJT-lGa9s?si=aPmK-6t8oDOiTfyd"
+    },
+  {
+    "video_name": "Karma in football",
+    "video_image": "images/video/karm.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "17min",
+    "video_id": 15,
+    "video_rating": "7.9",
+    "video_info": "heroes and protectors vol 4",
+    "video_src": "https://www.youtube.com/embed/eHv8H_PR4xQ?si=M5BUA3zorpZyO5O2"
+    },
+  {
+    "video_name": "Real madrid vs manchester city",
+    "video_image": "images/video/madcity.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "37min",
+    "video_id": 16,
+    "video_rating": "7.9",
+    "video_info": "heroes and protectors vol 4",
+    "video_src": "https://www.youtube.com/embed/U8YOR4_IeTI?si=DHn_zIR8zn0N9vqJ"
+    },
+  {
+    "video_name": "Master Figma variants",
+    "video_image": "images/video/figma.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "14min",
+    "video_id": 17,
+    "video_rating": "7.9",
+    "video_info": "heroes and protectors vol 4",
+    "video_src": "https://www.youtube.com/embed/sU-xp2V7-_A?si=76pQa0my0L2Vxc6W"
+    },
+  {
+    "video_name": "Figma auto layouts",
+    "video_image": "images/video/layouts.jpg",
+    "video_year": "2023",
+    "video_group": "4K",
+    "video_duration": "13min",
+    "video_id": 18,
+    "video_rating": "7.9",
+    "video_info": "heroes and protectors vol 4",
+    "video_src": "https://www.youtube.com/embed/HwiHqfax7Uk?si=L0Mf5m6GjOJPOrVs"
+    }
+];
+
 //All the html elements assigned to variables
 /* eslint-disable no-unused-vars */
 const button = document.querySelectorAll(".button"),
@@ -219,24 +745,13 @@ video.addEventListener("click", () => {
   playbtn.src = "images/icons/play-fill.svg";
   wave.classList.remove("active2");
 
-  //fetch API data containing all top video section details
-  fetch("app/JSON/video-data-2.json")
-  .then(response => response.json())
-  .then(data => {
-    //calling the display and play functions for the top videos
-    displayTopVideoItem(data);
-    playTopVideo(data);
-  });
+  //calling the display and play functions for the top videos
+  displayMostWatchedVideoItem (mostWatchedVideoData);
+  playMostWatchedVideo(mostWatchedVideoData);
 
-  //fetch API data containing all video section details
-  fetch("app/JSON/video-data.json")
-  .then(response => response.json())
-  .then(data => {
-    //calling the display and play functions for the videos
-    displayVideoItem(data);
-    playVideo(data);
-    //hiding all interface data relating to the music section
-  }).catch(error => console.error(error));
+  //calling the display and play functions for the videos
+  displayLatestUploadsItem(latestUploadsData);
+  playLatestUploadsVideo(latestUploadsData);
 
   aboutSection.classList.remove("in-view");
   aboutSection.classList.add("reg-heit");
@@ -271,7 +786,7 @@ video.addEventListener("click", () => {
 });
 
 //The function that displays TOPVIDEO SECTION
-function displayTopVideoItem (videoitems) {
+function displayMostWatchedVideoItem (videoitems) {
   let displayVideos = videoitems.map((item) => {
     return `<article id="${item.video_id}" class="release-cover rectgle video-height">
         <img id="${item.video_id}" class="topvidplay" onclick="playTopVideo()" src="images/icons/video-play.svg" alt="play icon">
@@ -292,7 +807,7 @@ function displayTopVideoItem (videoitems) {
 }
 
 //The function that plays  video from TOP VIDEOS Section
-function playTopVideo (vid) {
+function playMostWatchedVideo (vid) {
   let indz = 0;
   Array.from(document.getElementsByClassName("topvidplay")).forEach((elem)=>{
     elem.addEventListener("click", (e) => {
@@ -307,7 +822,7 @@ function playTopVideo (vid) {
 }
 
 //The function that displays NEW RELEASES section
-function displayVideoItem (videoitems) {
+function displayLatestUploadsItem (videoitems) {
   let displayVideos = videoitems.map((item) => {
     return `<article id="${item.video_id}" class="release-cover rectgle video-height">
         <img id="${item.video_id}" class="vidplay" onclick="playVideo()" src="images/icons/video-play.svg" alt="play icon">
@@ -328,7 +843,7 @@ function displayVideoItem (videoitems) {
 }
 
 //The function that plays  video from POPULAR VIDEOS Section
-function playVideo (vid) {
+function playLatestUploadsVideo (vid) {
   let indz = 0;
   Array.from(document.getElementsByClassName("vidplay")).forEach((elem)=>{
     elem.addEventListener("click", (e) => {
@@ -439,234 +954,173 @@ window.addEventListener("DOMContentLoaded", () => {
   artist_details.style.display = "none";
   aboutUs.style.display = "none";
 
-  //Side-bar Songs section
-  //fetch API data containing all audio details
-  fetch("app/JSON/audiodata.json").then(response => response.json())
-  .then(data => {
+  function load_track (index) {
+    track.src =  audioData[index].audio_src;
+    title.innerHTML = audioData[index].song_name;
+    artist.innerHTML = audioData[index].artist_name;
+    track_image.src = audioData[index].song_image;
+  }
+  load_track(index);
 
-    //Load new track function
-    function load_track (index) {
-      track.src =  data[index].audio_src;
-      title.innerHTML = data[index].song_name;
-      artist.innerHTML = data[index].artist_name;
-      track_image.src = data[index].song_image;
-    }
+  next.onclick = function () {
+    index++;
     load_track(index);
+    track.play();
+    playbtn.src = "images/icons/pause-fill.svg";
+  };
 
-    //Next button setup
-    next.onclick = function () {
-      index++;
-      load_track(index);
+  //Previous button setup
+  prev.onclick = function () {
+    index--;
+    load_track(index);
+    track.play();
+    playbtn.src = "images/icons/pause-fill.svg";
+  };
+
+  //Play button setup
+  playbtn.onclick = function play () {
+    if (track.paused || track.currentTime <= 0) {
       track.play();
       playbtn.src = "images/icons/pause-fill.svg";
-    };
+      wave.classList.add("active2");
+    } else {
+      track.pause();
+      playbtn.src = "images/icons/play-fill.svg";
+      wave.classList.remove("active2");
+    }
+  };
 
-    //Previous button setup
-    prev.onclick = function () {
-      index--;
-      load_track(index);
-      track.play();
+  //Side-bar Songs section
+  displaySidebarSongs(audioData);
+  //Individual music play button setup (Songs section) - Mobile and Tablet setup
+  let point = 0;
+  Array.from(document.getElementsByClassName("songListItem")).forEach((element)=>{
+    element.addEventListener("click", (e) => {
+      point = e.target.id;
       playbtn.src = "images/icons/pause-fill.svg";
-    };
+      track.src = audioData[point].audio_src;
+      track.play();
+      wave.classList.add("active2");
+      track_image.src = audioData[point].song_image;
+      active_image.src = audioData[point].song_image;
+      activeSongName.textContent = audioData[point].artist_name + "  - " + audioData[point].song_name;
+      artist.innerHTML = audioData[point].artist_name;
+      title.innerHTML = audioData[point].song_name;
+    });
+  });
 
-    //Play button setup
-    playbtn.onclick = function play () {
-      if (track.paused || track.currentTime <= 0) {
-        track.play();
+  //Search bar Function
+  const categories = [ ...new Set(audioData.map((item)=> { return item; })) ];
+  document.getElementById("search-bar").addEventListener("input", (e)=> {
+    searchResultSection.style.display = "block";
+    music_cards.style.display = "none";
+    artist_cards.style.display = "none";
+    top_image.style.display = "none";
+
+    const searchData = e.target.value.toLowerCase();
+    const filterData = categories.filter((item)=> {
+      if (item.song_name.toLocaleLowerCase().includes(searchData)) {
+        return (item.song_name.toLocaleLowerCase().includes(searchData));
+      } else if (item.artist_name.toLocaleLowerCase().includes(searchData)) {
+        return (item.artist_name.toLocaleLowerCase().includes(searchData));
+      }
+    });
+    if (searchData.length >= 1){
+      displaySearchItem(filterData);
+    } else if (searchData.length <= 0) {
+      music_cards.style.display = "block";
+      searchResultSection.style.display = "none";
+      artist_cards.style.display = "block";
+      top_image.style.display = "block";
+    }
+  });
+
+  //Individual music play button setup (Search result section)
+  let ind = 0;
+  let curr_playing = false;
+  Array.from(document.getElementsByClassName("ico")).forEach((element)=>{
+    element.addEventListener("click", (e) => {
+      if (curr_playing == false) {
+        ind = e.target.id;
+        e.target.src = "images/icons/pause-fill.svg";
         playbtn.src = "images/icons/pause-fill.svg";
+        curr_playing = true;
+        track.src = audioData[ind].audio_src;
+        track.play();
         wave.classList.add("active2");
+        track_image.src = audioData[ind].song_image;
+        active_image.src = audioData[ind].song_image;
+        artist.innerHTML = audioData[ind].artist_name;
+        title.innerHTML = audioData[ind].song_name;
       } else {
-        track.pause();
+        e.target.src = "images/icons/play-circle-fill.svg";
         playbtn.src = "images/icons/play-fill.svg";
+        track.src = audioData[ind].audio_src;
+        curr_playing = false;
+        track.pause();
         wave.classList.remove("active2");
       }
-    };
-  }).catch(error => console.error(error));
+    });
+  });
 
-  //Side-bar Songs section
-  //fetch API data containing all audio details
-  fetch("app/JSON/audiodata.json").then(response => response.json())
-  .then(data => {
-
-    displaySidebarSongs(data);
-    //Individual music play button setup (Songs section) - Mobile and Tablet setup
-    let point = 0;
-    Array.from(document.getElementsByClassName("songListItem")).forEach((element)=>{
-      element.addEventListener("click", (e) => {
-        point = e.target.id;
+  // New releases Section
+  displayNewReleasesItem(audioData);
+  //Individual music play button setup (New releases section)
+  let indix = 0;
+  let now_playing = false;
+  Array.from(document.getElementsByClassName("icon")).forEach((elem)=>{
+    elem.addEventListener("click", (e) => {
+      if (now_playing == false) {
+        indix = e.target.id;
+        e.target.src = "images/icons/pause-fill.svg";
         playbtn.src = "images/icons/pause-fill.svg";
-        track.src = data[point].audio_src;
+        now_playing = true;
+        track.src = audioData[indix].audio_src;
         track.play();
         wave.classList.add("active2");
-        track_image.src = data[point].song_image;
-        active_image.src = data[point].song_image;
-        activeSongName.textContent = data[point].artist_name + "  - " + data[point].song_name;
-        artist.innerHTML = data[point].artist_name;
-        title.innerHTML = data[point].song_name;
-      });
-    });
-
-    //Search bar Function
-    const categories = [ ...new Set(data.map((item)=> { return item; })) ];
-    document.getElementById("search-bar").addEventListener("input", (e)=> {
-      searchResultSection.style.display = "block";
-      music_cards.style.display = "none";
-      artist_cards.style.display = "none";
-      top_image.style.display = "none";
-
-      const searchData = e.target.value.toLowerCase();
-      const filterData = categories.filter((item)=> {
-        if (item.song_name.toLocaleLowerCase().includes(searchData)) {
-          return (item.song_name.toLocaleLowerCase().includes(searchData));
-        } else if (item.artist_name.toLocaleLowerCase().includes(searchData)) {
-          return (item.artist_name.toLocaleLowerCase().includes(searchData));
-        }
-      });
-      if (searchData.length >= 1){
-        displaySearchItem(filterData);
-      } else if (searchData.length <= 0) {
-        music_cards.style.display = "block";
-        searchResultSection.style.display = "none";
-        artist_cards.style.display = "block";
-        top_image.style.display = "block";
+        track_image.src = audioData[indix].song_image;
+        artist.innerHTML = audioData[indix].artist_name;
+        title.innerHTML = audioData[indix].song_name;
+      } else {
+        e.target.src = "images/icons/video-play.svg";
+        playbtn.src = "images/icons/play-fill.svg";
+        track.src = audioData[indix].audio_src;
+        now_playing = false;
+        track.pause();
+        wave.classList.remove("active2");
       }
     });
+  });
 
-    //Individual music play button setup (Search result section)
-    let ind = 0;
-    let curr_playing = false;
-    Array.from(document.getElementsByClassName("ico")).forEach((element)=>{
-      element.addEventListener("click", (e) => {
-        if (curr_playing == false) {
-          ind = e.target.id;
-          e.target.src = "images/icons/pause-fill.svg";
+  //Artist display section
+  displayArtistItem(audioData);
+  //Individual artist display (Popular Artist Selection setup)
+  let inx = 0;
+  Array.from(document.getElementsByClassName("circle")).forEach((element)=>{
+    element.addEventListener("click", (e) => {
+      inx = e.target.id;
+      artistImage.src = audioData[inx-1].artist_image;
+      artistName.innerHTML = audioData[inx-1].artist_name;
+      discover.style.display = "none";
+      artist_details.style.display = "block";
+      displayArtistSongs(audioData);
+
+      //Individual music play button setup (Artist selected music section)
+      let inix = 0;
+      Array.from(document.getElementsByClassName("son")).forEach((elem)=>{
+        elem.addEventListener("click", (e) => {
+          inix = e.target.id;
           playbtn.src = "images/icons/pause-fill.svg";
-          curr_playing = true;
-          track.src = data[ind].audio_src;
+          track.src = audioData[inix].audio_src;
           track.play();
           wave.classList.add("active2");
-          track_image.src = data[ind].song_image;
-          active_image.src = data[ind].song_image;
-          artist.innerHTML = data[ind].artist_name;
-          title.innerHTML = data[ind].song_name;
-        } else {
-          e.target.src = "images/icons/play-circle-fill.svg";
-          playbtn.src = "images/icons/play-fill.svg";
-          track.src = data[ind].audio_src;
-          curr_playing = false;
-          track.pause();
-          wave.classList.remove("active2");
-        }
-      });
-    });
-  }).catch(error => console.error(error));
-
-  /* New releases Section*/
-  //fetch API data containing all audio details
-  /*
-  fetch("http://rukky.pythonanywhere.com/new-release/").then(response => response.json())
-  .then(data => {
-
-    console.log(data.albums);
-    //calling the display functions for the music page
-    displayNewReleasesItem(data.albums);
-    //Individual music play button setup (New releases section)
-    let indix = 0;
-    let now_playing = false;
-    Array.from(document.getElementsByClassName("icon")).forEach((elem)=>{
-      elem.addEventListener("click", (e) => {
-        if (now_playing == false) {
-          indix = e.target.id;
-          e.target.src = "/images/icons/pause-fill.svg";
-          playbtn.src = "/images/icons/pause-fill.svg";
-          now_playing = true;
-          //track.src = data.albums[indix].external_urls.spotify;
-          track.play();
-          wave.classList.add("active2");
-          track_image.src = data.albums[indix].images[0].url;
-          artist.innerHTML = data.albums[indix].artists[0].name;
-          title.innerHTML = data.albums[indix].name;
-        } else {
-          e.target.src = "/images/icons/video-play.svg";
-          playbtn.src = "/images/icons/play-fill.svg";
-          track.src = data.albums[indix].external_urls.spotify;
-          now_playing = false;
-          track.pause();
-          wave.classList.remove("active2");
-        }
-      });
-    });
-  }).catch(error => console.error(error));
- */
-
-  /* New releases Section*/
-  //fetch API data containing all audio details
-  fetch("app/JSON/audiodata.json").then(response => response.json())
-  .then(data => {
-    //calling the display functions for the music page
-    displayNewReleasesItem(data);
-    //Individual music play button setup (New releases section)
-    let indix = 0;
-    let now_playing = false;
-    Array.from(document.getElementsByClassName("icon")).forEach((elem)=>{
-      elem.addEventListener("click", (e) => {
-        if (now_playing == false) {
-          indix = e.target.id;
-          e.target.src = "images/icons/pause-fill.svg";
-          playbtn.src = "images/icons/pause-fill.svg";
-          now_playing = true;
-          track.src = data[indix].audio_src;
-          track.play();
-          wave.classList.add("active2");
-          track_image.src = data[indix].song_image;
-          artist.innerHTML = data[indix].artist_name;
-          title.innerHTML = data[indix].song_name;
-        } else {
-          e.target.src = "images/icons/video-play.svg";
-          playbtn.src = "images/icons/play-fill.svg";
-          track.src = data[indix].audio_src;
-          now_playing = false;
-          track.pause();
-          wave.classList.remove("active2");
-        }
-      });
-    });
-  }).catch(error => console.error(error));
-
-  /*Artist display section*/
-  //fetch API data containing all audio details
-  fetch("app/JSON/audiodata.json").then(response => response.json())
-  .then(data => {
-
-    displayArtistItem(data);
-    //Individual artist display (Popular Artist Selection setup)
-    let inx = 0;
-    Array.from(document.getElementsByClassName("circle")).forEach((element)=>{
-      element.addEventListener("click", (e) => {
-        inx = e.target.id;
-        artistImage.src = data[inx-1].artist_image;
-        artistName.innerHTML = data[inx-1].artist_name;
-        discover.style.display = "none";
-        artist_details.style.display = "block";
-        displayArtistSongs(data);
-
-        //Individual music play button setup (Artist selected music section)
-        let inix = 0;
-        Array.from(document.getElementsByClassName("son")).forEach((elem)=>{
-          elem.addEventListener("click", (e) => {
-            inix = e.target.id;
-            playbtn.src = "images/icons/pause-fill.svg";
-            track.src = data[inix].audio_src;
-            track.play();
-            wave.classList.add("active2");
-            track_image.src = data[inix].song_image;
-            artist.innerHTML = data[inix].artist_name;
-            title.innerHTML = data[inix].song_name;
-          });
+          track_image.src = audioData[inix].song_image;
+          artist.innerHTML = audioData[inix].artist_name;
+          title.innerHTML = audioData[inix].song_name;
         });
       });
     });
-  }).catch(error => console.error(error));
+  });
 });
 
 //Popular Artist exit button setup
@@ -806,22 +1260,13 @@ songsLink.onclick = () => {
 const video_menu_link = document.querySelector(".videoLink");
 video_menu_link.addEventListener("click", () => {
 
-  fetch("app/JSON/video-data-2.json")
-  .then(response => response.json())
-  .then(data => {
-    //calling the display and play functions for the top videos
-    displayTopVideoItem(data);
-    playTopVideo(data);
-  });
+  //calling the display and play functions for the top videos
+  displayMostWatchedVideoItem(mostWatchedVideoData);
+  playMostWatchedVideo(mostWatchedVideoData);
 
-  //fetch API data containing all video section details
-  fetch("app/JSON/video-data.json")
-  .then(response => response.json())
-  .then(data => {
-    //calling the display and play functions for the videos
-    displayVideoItem(data);
-    playVideo(data);
-  });
+  //calling the display and play functions for the videos
+  displayLatestUploadsItem(latestUploadsData);
+  playLatestUploadsVideo(latestUploadsData);
 
   Bttn.classList.remove("menu-open");
   navBar.classList.remove("nav-open");
