@@ -4,523 +4,347 @@ const audioData = [
     artist_name: "Alan Walker",
     song_id: 0,
     artist_id: 1,
-    song_image: "images/covers/alan-walker.jpg",
+    song_image: "images/covers/music/alan-walker.jpg",
     active_image: "images/background/alan-walker.jpg",
     artist_image: "images/artists/omah_lay.jpg",
     song_group: "recommendations",
     song_info: "Alan Walker - Faded",
-    audio_src: ""
+    audio_src: "music/Alan_Walker-Faded.mp3"
   },
   {
     song_name: "Promises",
     artist_name: "Calvin Harris ft Sam Smith",
     song_id: 1,
     artist_id: 2,
-    song_image: "images/covers/calvin-smith.jpg",
+    song_image: "images/covers/music/calvin-smith.jpg",
     artist_image: "images/artists/smith1.jpg",
     song_group: "recommendations",
     song_info: "Calvin Harris ft Sam Smith - Promises",
-    audio_src: ""
+    audio_src: "music/Calvin_Harris_ft_Sam_Smith-Promises.mp3"
   },
   {
     song_name: "Bad Habits",
     artist_name: "Ed Sheeran",
     song_id: 2,
     artist_id: 3,
-    song_image: "images/covers/sheeran.jpg",
+    song_image: "images/covers/music/sheeran.jpg",
     artist_image: "images/artists/beyonce1.jpg",
     song_group: "recommendations",
     song_info: "Ed Sheeran - Bad Habits",
-    audio_src: ""
+    audio_src: "music/Ed_Sheeran-Bad_Habits.mp3"
   },
   {
     song_name: "Reason",
     artist_name: "Omah Lay",
     song_id: 3,
     artist_id: 4,
-    song_image: "images/covers/omah_lay.jpg",
+    song_image: "images/covers/music/omah_lay.jpg",
     artist_image: "images/artists/beiber1.jpg",
     song_group: "recommendations",
     song_info: "Omah Lay - Reason",
-    audio_src: ""
+    audio_src: "music/Omah_lay-Reason.mp3"
   },
   {
     song_name: "Shivers",
     artist_name: "Ed Sheeran",
     song_id: 4,
     artist_id: 5,
-    song_image: "images/covers/sheeran2.jpg",
+    song_image: "images/covers/music/sheeran2.jpg",
     artist_image: "images/artists/rema1.jpg",
     song_group: "recommendations",
     song_info: "Ed Sheeran - Shivers",
-    audio_src: ""
+    audio_src: "music/Ed_Sheeran-Shivers.mp3"
   },
   {
     song_name: "Charm",
     artist_name: "Rema",
     song_id: 5,
     artist_id: 6,
-    song_image: "images/covers/rema.jpg",
+    song_image: "images/covers/music/rema.jpg",
     artist_image: "images/artists/sheeran1.jpg",
     song_group: "recommendations",
     song_info: "Rema - Charm",
-    audio_src: ""
+    audio_src: "music/Rema-Charm.mp3"
   },
   {
     song_name: "Man I Am",
     artist_name: "Sam Smith",
     song_id: 6,
     artist_id: 7,
-    song_image: "images/covers/smith.jpg",
+    song_image: "images/covers/music/smith.jpg",
     artist_image: "images/artists/victony1.jpg",
     song_group: "recommendations",
     song_info: "Sam Smith - Man I Am",
-    audio_src: ""
+    audio_src: "music/Sam_Smith-Man_I_Am.mp3"
   },
   {
     song_name: "Soweto",
     artist_name: "Victony",
     song_id: 7,
     artist_id: 8,
-    song_image: "images/covers/victony.jpg",
+    song_image: "images/covers/music/victony.jpg",
     artist_image: "images/artists/stormzy1.jpg",
     song_group: "recommendations",
     song_info: "Victony Soweto remix",
-    audio_src: ""
+    audio_src: "music/Soweto.mp3"
   },
   {
     song_name: "Mara",
     artist_name: "Rema",
     song_id: 8,
     artist_id: 9,
-    song_image: "images/covers/rema2.jpg",
+    song_image: "images/covers/music/rema2.jpg",
     artist_image: "images/artists/burna1.jpg",
     song_group: "recommendations",
     song_info: "Rema - Mara",
-    audio_src: ""
+    audio_src: "music/Rema-Mara.mp3"
   },
   {
     song_name: "Own It",
     artist_name: "Stormzy ft Ed Sheeran and Burna Boy",
     song_id: 9,
     artist_id: 10,
-    song_image: "images/covers/stormzy.jpg",
+    song_image: "images/covers/music/stormzy.jpg",
     artist_image: "images/artists/rihanna1.jpg",
     song_group: "recommendations",
     song_info: "Stormzy ft Ed Sheeran and Burna Boy Own It",
-    audio_src: ""
+    audio_src: "music/Stormzy_ft_Ed_Sheeran_and_Burna_Boy-Own_It.mp3"
   },
   {
     song_name: "Dangerously",
     artist_name: "Ed Sheeran",
     song_id: 10,
     artist_id: 11,
-    song_image: "images/covers/sheeran3.jpg",
+    song_image: "images/covers/music/sheeran3.jpg",
     artist_image: "images/artists/selena1.jpg",
     song_group: "recommendations",
     song_info: "Ed Sheeran - Dangerously",
-    audio_src: ""
+    audio_src: "music/Ed_Sheeran-Dangerously.mp3"
   }
 ];
 
 const latestUploadsData = [
   {
-    video_name: "Antman",
-    video_image: "images/video/antman.jpg",
+    video_name: "Dungeons vs dragons",
+    video_image: "images/covers/video/dungeons.jpg",
     video_year: "2023",
     video_group: "HD",
     video_duration: "22min",
     video_id: 1,
+    video_rating: "9.5",
+    video_info: "Dungeons vs dragons: final battle scene",
+    video_src: "https://www.youtube.com/embed/l_Kr_oyZ1p8?si=oln2zIa0eyG0v_fP"
+  },
+  {
+    video_name: "Blue beetle: first transformation",
+    video_image: "images/covers/video/beetle.jpg",
+    video_year: "2023",
+    video_group: "HD",
+    video_duration: "26min",
+    video_id: 2,
+    video_rating: "7.2",
+    video_info: "Blue beetle: alien beetle first merge with host",
+    video_src: "https://www.youtube.com/embed/g0x2kurmDlA?si=I4c6Df7r6VrTsAnz"
+  },
+  {
+    video_name: "Supergirl vs zod",
+    video_image: "images/covers/video/supergirl.jpeg",
+    video_year: "2023",
+    video_group: "4K",
+    video_duration: "16min",
+    video_id: 3,
+    video_rating: "7.7",
+    video_info: "Supergirl vs zod: rage battle for earth",
+    video_src: "https://www.youtube.com/embed/DTUcaDb-2r0?si=Pb_GUuyIXiUCxUld"
+  },
+  {
+    video_name: "Urameshi yusuke vs toguro",
+    video_image: "https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_s7gPE2AlyzDO9wRnykMa0a9YeS_yQFd8_SVH5e1wWGc4MiARr-pkdGIoqvGsYRmgnDu09KbM1Zs_Xnu3KU4Ab2ofxIA2E8jGPyfNV7srStg-de4uFJuc50KC8Bc5ArQb4StZ90twFH8u0u93U=w919-h516-p-k-no-nu",
+    video_year: "2023",
+    video_group: "HD",
+    video_duration: "21min",
+    video_id: 4,
     video_rating: "8.5",
-    video_info: "Demon hunters anime",
-    video_src: ""
+    video_info: "Urameshi yusuke vs toguro awesome fight scene",
+    video_src: "https://www.youtube.com/embed/M-ueftd5aJU?si=9MT2QJg6Kcndd4Ph"
   },
   {
-    "video_name": "One Punch man",
-    "video_image": "images/video/one-punch.jpg",
-    "video_year": "2023",
-    "video_group": "HD",
-    "video_duration": "26min",
-    "video_id": 2,
-    "video_rating": "7.2",
-    "video_info": "I challenged our teacher in combat",
-    "video_src": "https://www.youtube.com/embed/FIXm4R5_BJ0?si=uDf1VzKjZMtmjStJ"
+    video_name: "Dracula untold: vlads vampires",
+    video_image: "images/covers/video/dracula.jpg",
+    video_year: "2023",
+    video_group: "HD",
+    video_duration: "31min",
+    video_id: 5,
+    video_rating: "8.5",
+    video_info: "Dracula untold: vlads vampires vs the persian army",
+    video_src: "https://www.youtube.com/embed/jtXEOk5DeQI?si=DAdUYN2E6jdaQpet"
   },
   {
-    "video_name": "Legendary Anime Hand Combats",
-    "video_image": "images/video/genos.jpg",
-    "video_year": "2023",
-    "video_group": "4K",
-    "video_duration": "29min",
-    "video_id": 3,
-    "video_rating": "7.9",
-    "video_info": "Anime Hand Combats",
-    "video_src": "https://www.youtube.com/embed/c4FLtqbYU8s?si=4z0xCbUtWlyUePc8"
+    video_name: "Immortals: gods vs titans",
+    video_image: "images/covers/video/immortals.jpg",
+    video_year: "2023",
+    video_group: "4K",
+    video_duration: "17min",
+    video_id: 6,
+    video_rating: "7.9",
+    video_info: "Immortals: epic battle, gods vs titans",
+    video_src: "https://www.youtube.com/embed/kJvc-eDdEw8?si=g6e4WyIB9IyKiCyN"
   },
   {
-    "video_name": "Legendary Anime Battles",
-    "video_image": "images/video/battles.jpg",
-    "video_year": "2023",
-    "video_group": "HD",
-    "video_duration": "10min",
-    "video_id": 4,
-    "video_rating": "9.2",
-    "video_info": "You can't escape your past",
-    "video_src": "https://www.youtube.com/embed/O_saBlPL4d8?si=dUCArk7TIG26_9Do"
+    video_name: "Monster hunter",
+    video_image: "images/covers/video/monsters.jpg",
+    video_year: "2023",
+    video_group: "4K",
+    video_duration: "17min",
+    video_id: 7,
+    video_rating: "7.9",
+    video_info: "Monster hunter: hunters vs diablos",
+    video_src: "https://www.youtube.com/embed/uT5RGuglLbM?si=5SpoJ_GAX4CTr0hd"
   },
   {
-    "video_name": "Anime rage moments",
-    "video_image": "images/video/rage.jpg",
-    "video_year": "2023",
-    "video_group": "4K",
-    "video_duration": "16min",
-    "video_id": 5,
-    "video_rating": "9.7",
-    "video_info": "Honor vs power",
-    "video_src": "https://www.youtube.com/embed/zsWUp6zp-no?si=AhImtm0ESU-Kn59g"
+    video_name: "Nezha vs Ao bing",
+    video_image: "images/covers/video/nezha1.jpg",
+    video_year: "2023",
+    video_group: "4K",
+    video_duration: "17min",
+    video_id: 8,
+    video_rating: "7.9",
+    video_info: "Nezha vs Ao bing: epic battle",
+    video_src: "https://www.youtube.com/embed/eGL2JdkbXT8?si=QDtHdQGomVawyLRj"
   },
   {
-    "video_name": "Best action anime",
-    "video_image": "images/video/action.jpg",
-    "video_year": "2023",
-    "video_group": "HD",
-    "video_duration": "21min",
-    "video_id": 6,
-    "video_rating": "8.5",
-    "video_info": "Awesome action animes",
-    "video_src": "https://www.youtube.com/embed/G6Cnoyyhu3o?si=aJ4CB2pF_sJIq_8C"
+    video_name: "The witcher: battle scene",
+    video_image: "images/covers/video/witcher.jpg",
+    video_year: "2023",
+    video_group: "4K",
+    video_duration: "17min",
+    video_id: 9,
+    video_rating: "7.9",
+    video_info: "The witcher: vesemir vs leshen",
+    video_src: "https://www.youtube.com/embed/1MZC765U38Q?si=L2ukJ-cNKpSOnirJ"
   },
   {
-    "video_name": "Overpowered anime characters",
-    "video_image": "images/video/over.jpg",
-    "video_year": "2023",
-    "video_group": "4K",
-    "video_duration": "13min",
-    "video_id": 7,
-    "video_rating": "7.7",
-    "video_info": "Overpowered anime characters snap",
-    "video_src": "https://www.youtube.com/embed/8R9wntOoFOE?si=tlvJ6q8eqndfs3rb"
+    video_name: "Nezha vs Dragon son",
+    video_image: "images/covers/video/nezha2.jpeg",
+    video_year: "2023",
+    video_group: "4K",
+    video_duration: "17min",
+    video_id: 10,
+    video_rating: "7.9",
+    video_info: "Nezha vs Ao bing: nezha reborn",
+    video_src: "https://www.youtube.com/embed/qFF6g4Q0H3g?si=P3K5p-nAKBVuPCTL"
   },
-  {
-    "video_name": "Baki vs Yujiro",
-    "video_image": "images/video/baki.jpg",
-    "video_year": "2023",
-    "video_group": "HD",
-    "video_duration": "17min",
-    "video_id": 8,
-    "video_rating": "8.6",
-    "video_info": "Most epic battle",
-    "video_src": "https://www.youtube.com/embed/48POqJsCC2M?si=lXsDyPFepY4kpsOj"
-  },
-  {
-    "video_name": "Stunning Anime fights",
-    "video_image": "images/video/stunning.jpg",
-    "video_year": "2023",
-    "video_group": "HD",
-    "video_duration": "31min",
-    "video_id": 9,
-    "video_rating": "8.5",
-    "video_info": "Stunning Anime fights",
-    "video_src": "https://www.youtube.com/embed/n5GO0ZiE7rU?si=Jg_kU4husriTLBRt"
-  },
-  {
-    "video_name": "Over powered mc anime",
-    "video_image": "images/video/overp.jpg",
-    "video_year": "2023",
-    "video_group": "4K",
-    "video_duration": "17min",
-    "video_id": 10,
-    "video_rating": "7.9",
-    "video_info": "powerful anime mcs",
-    "video_src": "https://www.youtube.com/embed/m64t7eaKHLw?si=bQUa6VpbrvFPUdUI"
-    },
-  {
-    "video_name": "Over powered mc anime characters",
-    "video_image": "images/video/overpp.jpg",
-    "video_year": "2023",
-    "video_group": "4K",
-    "video_duration": "27min",
-    "video_id": 11,
-    "video_rating": "7.9",
-    "video_info": "random",
-    "video_src": "https://www.youtube.com/embed/7ec2Puf1tcY?si=6h2fZ7lS9SAFK9FZ"
-    },
-  {
-    "video_name": "Demon Slayer mugen",
-    "video_image": "images/video/dm.jpg",
-    "video_year": "2023",
-    "video_group": "4K",
-    "video_duration": "15min",
-    "video_id": 12,
-    "video_rating": "7.9",
-    "video_info": "heroes and protectors vol 4",
-    "video_src": "https://www.youtube.com/embed/GCJnG6DYEeg?si=QMWKMLqUQAItY0BI"
-    },
-  {
-    "video_name": "Anime battle",
-    "video_image": "images/video/an.jpg",
-    "video_year": "2023",
-    "video_group": "4K",
-    "video_duration": "27min",
-    "video_id": 13,
-    "video_rating": "7.9",
-    "video_info": "heroes and protectors vol 4",
-    "video_src": "https://www.youtube.com/embed/O_saBlPL4d8?si=dUCArk7TIG26_9Do"
-    },
-  {
-    "video_name": "Footbal moments",
-    "video_image": "images/video/foot.jpg",
-    "video_year": "2023",
-    "video_group": "4K",
-    "video_duration": "29min",
-    "video_id": 14,
-    "video_rating": "7.9",
-    "video_info": "heroes and protectors vol 4",
-    "video_src": "https://www.youtube.com/embed/HsSJT-lGa9s?si=aPmK-6t8oDOiTfyd"
-    },
-  {
-    "video_name": "Karma in football",
-    "video_image": "images/video/karm.jpg",
-    "video_year": "2023",
-    "video_group": "4K",
-    "video_duration": "17min",
-    "video_id": 15,
-    "video_rating": "7.9",
-    "video_info": "heroes and protectors vol 4",
-    "video_src": "https://www.youtube.com/embed/eHv8H_PR4xQ?si=M5BUA3zorpZyO5O2"
-    },
-  {
-    "video_name": "Real madrid vs manchester city",
-    "video_image": "images/video/madcity.jpg",
-    "video_year": "2023",
-    "video_group": "4K",
-    "video_duration": "37min",
-    "video_id": 16,
-    "video_rating": "7.9",
-    "video_info": "heroes and protectors vol 4",
-    "video_src": "https://www.youtube.com/embed/U8YOR4_IeTI?si=DHn_zIR8zn0N9vqJ"
-    },
-  {
-    "video_name": "Master Figma variants",
-    "video_image": "images/video/figma.jpg",
-    "video_year": "2023",
-    "video_group": "4K",
-    "video_duration": "14min",
-    "video_id": 17,
-    "video_rating": "7.9",
-    "video_info": "heroes and protectors vol 4",
-    "video_src": "https://www.youtube.com/embed/sU-xp2V7-_A?si=76pQa0my0L2Vxc6W"
-    },
-  {
-    "video_name": "Figma auto layouts",
-    "video_image": "images/video/layouts.jpg",
-    "video_year": "2023",
-    "video_group": "4K",
-    "video_duration": "13min",
-    "video_id": 18,
-    "video_rating": "7.9",
-    "video_info": "heroes and protectors vol 4",
-    "video_src": "https://www.youtube.com/embed/HwiHqfax7Uk?si=L0Mf5m6GjOJPOrVs"
-    }
 ];
 const mostWatchedVideoData = [
   {
-    video_name: "Antman",
-    video_image: "images/video/antman.jpg",
+    video_name: "Eternals vs kro the deviant",
+    video_image: "images/covers/video/eternals.jpg",
     video_year: "2023",
     video_group: "HD",
     video_duration: "22min",
     video_id: 1,
+    video_rating: "9.5",
+    video_info: "Eternals vs kro the deviant",
+    video_src: "https://www.youtube.com/embed/lR7nxIMgTy4?si=MYl5jG3uO4DXPBNp"
+  },
+  {
+    video_name: "Undisputed Boyka Redemption",
+    video_image: "images/covers/video/boyka.jpeg",
+    video_year: "2023",
+    video_group: "HD",
+    video_duration: "26min",
+    video_id: 2,
+    video_rating: "7.2",
+    video_info: "Undisputed boyka battle scenes",
+    video_src: "https://www.youtube.com/embed/U1gH6XekL_c?si=UOeDk2YTqu2ORjI1"
+  },
+  {
+    video_name: "Moon knight scenes",
+    video_image: "images/covers/video/moon.jpg",
+    video_year: "2023",
+    video_group: "4K",
+    video_duration: "29min",
+    video_id: 3,
+    video_rating: "8.9",
+    video_info: "Moon knight battle scenes compilation",
+    video_src: "https://www.youtube.com/embed/p2rsb2alw_E?si=KcRLY87xuxclmxk0"
+  },
+  {
+    video_name: "Gabimaru vs tensen",
+    video_image: "images/covers/video/gabimaru.jpg",
+    video_year: "2023",
+    video_group: "HD",
+    video_duration: "10min",
+    video_id: 4,
+    video_rating: "9.2",
+    video_info: "Awesome anime battle scene",
+    video_src: "https://www.youtube.com/embed/VD2CpPSWSWY?si=LvvU_yLinv6kS7P6"
+  },
+  {
+    video_name: "Monster army vs knights",
+    video_image: "images/covers/video/knights.jpg",
+    video_year: "2023",
+    video_group: "4K",
+    video_duration: "16min",
+    video_id: 5,
+    video_rating: "7.7",
+    video_info: "Monster army vs knights: battle for power",
+    video_src: "https://www.youtube.com/embed/EBFGO9wbBS4?si=aRxok6bJ-GRFLdmS"
+  },
+  {
+    video_name: "Warcraft: Durotan vs Gul' dan",
+    video_image: "images/covers/video/warcraft.jpg",
+    video_year: "2023",
+    video_group: "HD",
+    video_duration: "21min",
+    video_id: 6,
     video_rating: "8.5",
-    video_info: "Demon hunters anime",
-    video_src: "https://www.youtube.com/embed/GCJnG6DYEeg?si=QMWKMLqUQAItY0BI"
+    video_info: "Warcraft: War for control of the horde",
+    video_src: "https://www.youtube.com/embed/7Ejd0CMgqIQ?si=oSsL_fA7-WlNZbAV"
   },
   {
-    "video_name": "One Punch man",
-    "video_image": "images/video/one-punch.jpg",
-    "video_year": "2023",
-    "video_group": "HD",
-    "video_duration": "26min",
-    "video_id": 2,
-    "video_rating": "7.2",
-    "video_info": "I challenged our teacher in combat",
-    "video_src": "https://www.youtube.com/embed/FIXm4R5_BJ0?si=uDf1VzKjZMtmjStJ"
+    video_name: "Legolas vs Bolg",
+    video_image: "images/covers/video/lotr.jpg",
+    video_year: "2023",
+    video_group: "4K",
+    video_duration: "13min",
+    video_id: 7,
+    video_rating: "7.7",
+    video_info: "Lord of the rings",
+    video_src: "https://www.youtube.com/embed/VWG6N7G22Uc?si=9li2o-IinfsS_gbC"
   },
   {
-    "video_name": "Legendary Anime Hand Combats",
-    "video_image": "images/video/genos.jpg",
-    "video_year": "2023",
-    "video_group": "4K",
-    "video_duration": "29min",
-    "video_id": 3,
-    "video_rating": "7.9",
-    "video_info": "Anime Hand Combats",
-    "video_src": "https://www.youtube.com/embed/c4FLtqbYU8s?si=4z0xCbUtWlyUePc8"
+    video_name: "The great wall: first battle",
+    video_image: "images/covers/video/greatWall.jpg",
+    video_year: "2023",
+    video_group: "HD",
+    video_duration: "17min",
+    video_id: 8,
+    video_rating: "8.6",
+    video_info: "The great wall: first battle",
+    video_src: "https://www.youtube.com/embed/qidtdvpzNao?si=UXeBsND0sSaf8s6y"
   },
   {
-    "video_name": "Legendary Anime Battles",
-    "video_image": "images/video/battles.jpg",
-    "video_year": "2023",
-    "video_group": "HD",
-    "video_duration": "10min",
-    "video_id": 4,
-    "video_rating": "9.2",
-    "video_info": "You can't escape your past",
-    "video_src": "https://www.youtube.com/embed/O_saBlPL4d8?si=dUCArk7TIG26_9Do"
+    video_name: "Stranger things: prison fight scene",
+    video_image: "images/covers/video/stranger.jpg",
+    video_year: "2023",
+    video_group: "HD",
+    video_duration: "31min",
+    video_id: 9,
+    video_rating: "8.5",
+    video_info: "Stranger things: prison fight scene",
+    video_src: "https://www.youtube.com/embed/StrWcKbZLYQ?si=CTlVnlgs9jlo7fJP"
   },
   {
-    "video_name": "Anime rage moments",
-    "video_image": "images/video/rage.jpg",
-    "video_year": "2023",
-    "video_group": "4K",
-    "video_duration": "16min",
-    "video_id": 5,
-    "video_rating": "9.7",
-    "video_info": "Honor vs power",
-    "video_src": "https://www.youtube.com/embed/zsWUp6zp-no?si=AhImtm0ESU-Kn59g"
-  },
-  {
-    "video_name": "Best action anime",
-    "video_image": "images/video/action.jpg",
-    "video_year": "2023",
-    "video_group": "HD",
-    "video_duration": "21min",
-    "video_id": 6,
-    "video_rating": "8.5",
-    "video_info": "Awesome action animes",
-    "video_src": "https://www.youtube.com/embed/G6Cnoyyhu3o?si=aJ4CB2pF_sJIq_8C"
-  },
-  {
-    "video_name": "Overpowered anime characters",
-    "video_image": "images/video/over.jpg",
-    "video_year": "2023",
-    "video_group": "4K",
-    "video_duration": "13min",
-    "video_id": 7,
-    "video_rating": "7.7",
-    "video_info": "Overpowered anime characters snap",
-    "video_src": "https://www.youtube.com/embed/8R9wntOoFOE?si=tlvJ6q8eqndfs3rb"
-  },
-  {
-    "video_name": "Baki vs Yujiro",
-    "video_image": "images/video/baki.jpg",
-    "video_year": "2023",
-    "video_group": "HD",
-    "video_duration": "17min",
-    "video_id": 8,
-    "video_rating": "8.6",
-    "video_info": "Most epic battle",
-    "video_src": "https://www.youtube.com/embed/48POqJsCC2M?si=lXsDyPFepY4kpsOj"
-  },
-  {
-    "video_name": "Stunning Anime fights",
-    "video_image": "images/video/stunning.jpg",
-    "video_year": "2023",
-    "video_group": "HD",
-    "video_duration": "31min",
-    "video_id": 9,
-    "video_rating": "8.5",
-    "video_info": "Stunning Anime fights",
-    "video_src": "https://www.youtube.com/embed/n5GO0ZiE7rU?si=Jg_kU4husriTLBRt"
-  },
-  {
-    "video_name": "Over powered mc anime",
-    "video_image": "images/video/overp.jpg",
-    "video_year": "2023",
-    "video_group": "4K",
-    "video_duration": "17min",
-    "video_id": 10,
-    "video_rating": "7.9",
-    "video_info": "powerful anime mcs",
-    "video_src": "https://www.youtube.com/embed/m64t7eaKHLw?si=bQUa6VpbrvFPUdUI"
-    },
-  {
-    "video_name": "Over powered mc anime characters",
-    "video_image": "images/video/overpp.jpg",
-    "video_year": "2023",
-    "video_group": "4K",
-    "video_duration": "27min",
-    "video_id": 11,
-    "video_rating": "7.9",
-    "video_info": "random",
-    "video_src": "https://www.youtube.com/embed/7ec2Puf1tcY?si=6h2fZ7lS9SAFK9FZ"
-    },
-  {
-    "video_name": "Demon Slayer mugen",
-    "video_image": "images/video/dm.jpg",
-    "video_year": "2023",
-    "video_group": "4K",
-    "video_duration": "15min",
-    "video_id": 12,
-    "video_rating": "7.9",
-    "video_info": "heroes and protectors vol 4",
-    "video_src": "https://www.youtube.com/embed/GCJnG6DYEeg?si=QMWKMLqUQAItY0BI"
-    },
-  {
-    "video_name": "Anime battle",
-    "video_image": "images/video/an.jpg",
-    "video_year": "2023",
-    "video_group": "4K",
-    "video_duration": "27min",
-    "video_id": 13,
-    "video_rating": "7.9",
-    "video_info": "heroes and protectors vol 4",
-    "video_src": "https://www.youtube.com/embed/O_saBlPL4d8?si=dUCArk7TIG26_9Do"
-    },
-  {
-    "video_name": "Footbal moments",
-    "video_image": "images/video/foot.jpg",
-    "video_year": "2023",
-    "video_group": "4K",
-    "video_duration": "29min",
-    "video_id": 14,
-    "video_rating": "7.9",
-    "video_info": "heroes and protectors vol 4",
-    "video_src": "https://www.youtube.com/embed/HsSJT-lGa9s?si=aPmK-6t8oDOiTfyd"
-    },
-  {
-    "video_name": "Karma in football",
-    "video_image": "images/video/karm.jpg",
-    "video_year": "2023",
-    "video_group": "4K",
-    "video_duration": "17min",
-    "video_id": 15,
-    "video_rating": "7.9",
-    "video_info": "heroes and protectors vol 4",
-    "video_src": "https://www.youtube.com/embed/eHv8H_PR4xQ?si=M5BUA3zorpZyO5O2"
-    },
-  {
-    "video_name": "Real madrid vs manchester city",
-    "video_image": "images/video/madcity.jpg",
-    "video_year": "2023",
-    "video_group": "4K",
-    "video_duration": "37min",
-    "video_id": 16,
-    "video_rating": "7.9",
-    "video_info": "heroes and protectors vol 4",
-    "video_src": "https://www.youtube.com/embed/U8YOR4_IeTI?si=DHn_zIR8zn0N9vqJ"
-    },
-  {
-    "video_name": "Master Figma variants",
-    "video_image": "images/video/figma.jpg",
-    "video_year": "2023",
-    "video_group": "4K",
-    "video_duration": "14min",
-    "video_id": 17,
-    "video_rating": "7.9",
-    "video_info": "heroes and protectors vol 4",
-    "video_src": "https://www.youtube.com/embed/sU-xp2V7-_A?si=76pQa0my0L2Vxc6W"
-    },
-  {
-    "video_name": "Figma auto layouts",
-    "video_image": "images/video/layouts.jpg",
-    "video_year": "2023",
-    "video_group": "4K",
-    "video_duration": "13min",
-    "video_id": 18,
-    "video_rating": "7.9",
-    "video_info": "heroes and protectors vol 4",
-    "video_src": "https://www.youtube.com/embed/HwiHqfax7Uk?si=L0Mf5m6GjOJPOrVs"
+    video_name: "Underworld: Lycans vs vampire",
+    video_image: "images/covers/video/underworld.jpg",
+    video_year: "2023",
+    video_group: "4K",
+    video_duration: "17min",
+    video_id: 10,
+    video_rating: "7.9",
+    video_info: "Underworld: Lycans vs vampire",
+    video_src: "https://www.youtube.com/embed/1CkC1-_8FzA?si=6VI7wU2BIGARCPTk"
     }
 ];
 
@@ -557,6 +381,7 @@ textNote = document.querySelector(".text"),
 artistSection = document.querySelector(".grid-col-small"),
 sideBarSection = document.querySelector(".songs"),
 videoSection = document.querySelector(".active-video"),
+overlay = document.querySelector(".overlay"),
 artist_details = document.querySelector(".artiste-details"),
 artist_songs_section = document.querySelector(".artistOnlySongs"),
 section = document.querySelectorAll(".sect"),
@@ -728,7 +553,6 @@ music.onclick=() =>{
   top_movie_cards.style.filter = "blur(0)";
   artist_cards.style.filter = "blur(0)";
 
-
   top_movie_cards.style.display = "none";
   movie_cards.style.display = "none";
   video_links.style.display = "none";
@@ -813,10 +637,10 @@ function playMostWatchedVideo (vid) {
     elem.addEventListener("click", (e) => {
       indz = e.target.id;
       videoSection.style.display = "flex";
+      overlay.style.display = "flex";
+      exit_con.style.display = "flex";
       indz -= 1;
       mainVideo.src = vid[indz].video_src;
-      //mainVideo.play();
-      //playPauseBtn.src = "/images/icons/pause-fill.svg";
     });
   });
 }
@@ -850,9 +674,9 @@ function playLatestUploadsVideo (vid) {
       indz = e.target.id;
       indz -= 1;
       videoSection.style.display = "flex";
+      overlay.style.display = "flex";
+      exit_con.style.display = "flex";
       mainVideo.src = vid[indz].video_src;
-      //mainVideo.play();
-      //playPauseBtn.src = "/images/icons/pause-fill.svg";
     });
   });
 }
@@ -951,6 +775,7 @@ window.addEventListener("DOMContentLoaded", () => {
   top_movie_cards.style.display = "none";
   video_links.style.display = "none";
   videoSection.style.display = "none";
+  overlay.style.display = "none";
   artist_details.style.display = "none";
   aboutUs.style.display = "none";
 
@@ -1133,6 +958,8 @@ exit_con.addEventListener("click", ()=>{
   //mainVideo.pause();
   //fullScreenBtn.src = "/images/icons/fullscreen.svg";
   videoSection.style.display = "none";
+  overlay.style.display = "none";
+  exit_con.style.display = "none";
   mainVideo.src = "";
   //return document.exitFullscreen();
 });
@@ -1301,161 +1128,7 @@ video_menu_link.addEventListener("click", () => {
   discover.style.display = "flex";
 });
 const mainVideo = document.querySelector(".video-screen");
-
-/*
-//Video-playing Section
-const container = document.querySelector(".container"),
-mainVideo = container.querySelector(".video"),
-videoTimeline = container.querySelector(".video-timeline"),
-progressBar = container.querySelector(".progress-bar"),
-volumeBtn = container.querySelector(".volume"),
-volumeSlider = container.querySelector(".left input"),
-currentVidTime = container.querySelector(".current-time"),
-videoDuration = container.querySelector(".video-duration"),
-skipBackward = container.querySelector(".skip-backward"),
-skipForward = container.querySelector(".skip-forward"),
-playPauseBtn = container.querySelector(".play-pause"),
-speedBtn = container.querySelector(".playback-speed"),
-speedOptions = container.querySelector(".speed-options"),
-pipBtn = container.querySelector(".pic-in-pic"),
-fullScreenBtn = container.querySelector(".fullscreen");
-let timer,
-vol_ = document.getElementById("icon-btn"),
-volu = document.getElementById("volu"),
-vol_ball = document.getElementById("vol-ball"),
-vol_br= document.getElementsByClassName("volume-bar")[0],
-volum = document.querySelector(".volume"),
-ball = document.getElementsByClassName("ball")[0];
-
-const hideControls = () => {
-  if(mainVideo.paused) return;
-  timer = setTimeout(() => {
-    container.classList.remove("show-controls");
-  }, 3000);
-};
-hideControls();
-
-container.addEventListener("mousemove", () => {
-  container.classList.add("show-controls");
-  clearTimeout(timer);
-  hideControls();
-});
-
-const formatTime = time => {
-  let seconds = Math.floor(time % 60),
-  minutes = Math.floor(time / 60) % 60,
-  hours = Math.floor(time / 3600);
-
-  seconds = seconds < 10 ? `0${seconds}` : seconds;
-  minutes = minutes < 10 ? `0${minutes}` : minutes;
-  hours = hours < 10 ? `0${hours}` : hours;
-
-  if(hours == 0) {
-      return `${minutes}:${seconds}`;
-  }
-  return `${hours}:${minutes}:${seconds}`;
-};
-
-videoTimeline.addEventListener("mousemove", e => {
-  let timelineWidth = videoTimeline.clientWidth;
-  let offsetX = e.offsetX;
-  let percent = Math.floor((offsetX / timelineWidth) * mainVideo.duration);
-  const progressTime = videoTimeline.querySelector("span");
-  offsetX = offsetX < 20 ? 20 : (offsetX > timelineWidth - 20) ? timelineWidth - 20 : offsetX;
-  progressTime.style.left = `${offsetX}px`;
-  progressTime.innerText = formatTime(percent);
-});
-
-videoTimeline.addEventListener("click", e => {
-  let timelineWidth = videoTimeline.clientWidth;
-  mainVideo.currentTime = (e.offsetX / timelineWidth) * mainVideo.duration;
-});
-
-mainVideo.addEventListener("timeupdate", e => {
-  let {currentTime, duration} = e.target;
-  let percent = (currentTime / duration) * 100;
-  progressBar.style.width = `${percent}%`;
-  currentVidTime.innerText = formatTime(currentTime);
-});
-
-mainVideo.addEventListener("loadeddata", () => {
-  videoDuration.innerText = formatTime(mainVideo.duration);
-});
-
-const draggableProgressBar = e => {
-  let timelineWidth = videoTimeline.clientWidth;
-  progressBar.style.width = `${e.offsetX}px`;
-  mainVideo.currentTime = (e.offsetX / timelineWidth) * mainVideo.duration;
-  currentVidTime.innerText = formatTime(mainVideo.currentTime);
-};
-
-/*==================================
-Video volume Controls Setup
-===================================
-volu.addEventListener("change", () => {
-  if (volu.value == 0) {
-    vol_.src = "/images/icons/volume-mute-fill.svg";
-  }
-  if (volu.value > 0) {
-    vol_.src = "/images/icons/volume-down.svg";
-  }
-  if (volu.value > 50) {
-    vol_.src = "/images/icons/volume-up-fill.svg";
-  }
-
-  let vol_a = volu.value;
-  vol_br.style.width = `${vol_a}%`;
-  vol_ball.style.left = `${vol_a}%`;
-  mainVideo.volume = vol_a/100;
-});
-
-fullScreenBtn.addEventListener("click", () => {
-  container.classList.toggle("fullscreen");
-  if(document.fullscreenElement) {
-    fullScreenBtn.src = "/images/icons/fullscreen.svg";
-    return document.exitFullscreen();
-  }
-  fullScreenBtn.src = "/images/icons/fullscreen-exit.svg";
-  container.requestFullscreen();
-});
-
-speedOptions.querySelectorAll("li").forEach(option => {
-  option.addEventListener("click", () => {
-    console.log("cli");
-    speedOptions.classList.add("hide");
-    mainVideo.playbackRate = option.dataset.speed;
-    speedOptions.querySelector(".active").classList.remove("active");
-    option.classList.add("active");
-  });
-});
-
-document.addEventListener("click", e => {
-  if(e.target.tagName !== "SPAN" || e.target.className !== "material-symbols-rounded") {
-    //speedOptions.classList.add("hide");
-  }
-});
-
-speedBtn.addEventListener("click", () => speedOptions.classList.toggle("hide"));
-pipBtn.addEventListener("click", () => mainVideo.requestPictureInPicture());
-skipBackward.addEventListener("click", () => mainVideo.currentTime -= 5);
-skipForward.addEventListener("click", () => mainVideo.currentTime += 5);
-mainVideo.addEventListener("play", () => playPauseBtn.classList.replace("fa-play", "fa-pause"));
-mainVideo.addEventListener("pause", () => playPauseBtn.classList.replace("fa-pause", "fa-play"));
-videoTimeline.addEventListener("mousedown", () => videoTimeline.addEventListener("mousemove", draggableProgressBar));
-document.addEventListener("mouseup", () => videoTimeline.removeEventListener("mousemove", draggableProgressBar));
-playPauseBtn.addEventListener("click", () => {
-  if (mainVideo.paused) {
-    mainVideo.play();
-    playPauseBtn.src = "/images/icons/pause-fill.svg";
-  } else {
-    mainVideo.pause();
-    playPauseBtn.src = "/images/icons/play-fill.svg";
-  }
-});
-*/
-const first = document.querySelector(".first");
-const second = document.querySelector(".second");
-const third = document.querySelector(".third");
+const first = document.querySelector(".first"), second = document.querySelector(".second"), third = document.querySelector(".third");
 
 first.onclick = () => {
   first.classList.contains("half") ? first.classList.replace("half", "full") : first.classList.add("full");

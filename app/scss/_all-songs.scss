@@ -4,6 +4,7 @@ main {
   height: 100vh;
   flex-wrap: wrap;
   overflow: hidden;
+  justify-content: center;
 
   .side-bar, .discover {
     position: relative;
